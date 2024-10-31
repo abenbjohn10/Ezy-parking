@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Parking Space Booking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .card {
+            margin-top: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-primary {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title text-center">New Parking Space Booking</h3>
+            <form>
+                <!-- Location -->
+                <div class="form-group">
+                    <label for="location">Parking Location</label>
+                    <select class="form-control" id="location" required>
+                        <option value="">Select a location</option>
+                        <option value="downtown">Downtown Parking Lot</option>
+                        <option value="central">Central Park Garage</option>
+                        <option value="airport">Airport Parking</option>
+                        <!-- More options as needed -->
+                    </select>
+                </div>
+
+                <!-- Date -->
+                <div class="form-group">
+                    <label for="date">Booking Date</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+
+                <!-- Time -->
+                <div class="form-group">
+                    <label for="time">Start Time</label>
+                    <input type="time" class="form-control" id="time" required>
+                </div>
+
+                <!-- Duration -->
+                <div class="form-group">
+                    <label for="duration">Duration (hours)</label>
+                    <input type="number" class="form-control" id="duration" placeholder="Enter duration in hours" min="1" max="24" required>
+                </div>
+
+                <!-- Vehicle Information -->
+                <div class="form-group">
+                    <label for="vehicle">Vehicle Information</label>
+                    <input type="text" class="form-control" id="vehicle" placeholder="Enter your vehicle's model and license plate number" required>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
